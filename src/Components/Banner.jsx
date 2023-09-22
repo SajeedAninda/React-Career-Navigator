@@ -12,7 +12,7 @@ const Banner = () => {
                 <button className='px-4 py-3 rounded-lg font-bold bg-[#85D7A9] text-white'>Get Started</button>
             </div>
             <div className=''>
-                <img className='w-[500px]' src={user} alt="" />
+                <img className='w-[550px]' src={user} alt="" />
             </div>
         </div>
     );

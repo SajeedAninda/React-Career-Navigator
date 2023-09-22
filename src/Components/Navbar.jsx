@@ -8,7 +8,7 @@ const Navbar = () => {
                 <div>
                     <h1 className='text-[#1A1919] font-extrabold text-3xl'>Career<span className='text-[#85D7A9]'>Navigator</span></h1>
                 </div>
-                <div className='flex gap-6'>
+                <div className='flex gap-6 text-lg'>
                     <NavLink
                         to={`/`}
                         className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "text-[#85D7A9] underline font-bold" : ""}>
