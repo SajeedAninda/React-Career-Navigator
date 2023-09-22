@@ -1,12 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div>
             <nav className='py-6 flex justify-between items-center'>
                 <div>
-                    <h1 className='text-[#1A1919] font-extrabold text-3xl'>Career<span className='text-[#85D7A9]'>Navigator</span></h1>
+                    <Link to={`/`}><h1 className='text-[#1A1919] font-extrabold text-3xl'>Career<span className='text-[#85D7A9]'>Navigator</span></h1></Link>
                 </div>
                 <div className='flex gap-6 text-lg'>
                     <NavLink

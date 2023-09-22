@@ -58,6 +58,7 @@ const JobDetails = () => {
                         <IoLocationOutline className='text-[#757575] font-semibold'></IoLocationOutline>
                         <p className='text-[#1A1919] font-semibold'>Address: {contact_information.address}</p>
                     </div>
+                    <button className='px-4 py-3 w-full mt-3 rounded-lg font-bold bg-[#78d4a0] text-white'>Apply Now</button>
                 </div>
             </div>
         </div>
