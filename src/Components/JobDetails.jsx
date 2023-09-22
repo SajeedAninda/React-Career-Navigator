@@ -6,6 +6,8 @@ import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
 import { BiSolidBusiness } from "react-icons/bi";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const JobDetails = () => {
     let jobData = useLoaderData();
@@ -15,6 +17,10 @@ const JobDetails = () => {
     console.log(jobData);
     console.log(job);
     let { job_description, job_responsibility, educational_requirements, experiences, job_title, salary, contact_information, company_name } = job;
+
+    let handleToasted=()=>{
+        toast("Applied Succesfully!");
+    }
 
     return (
         <div>
@@ -58,7 +64,8 @@ const JobDetails = () => {
                         <IoLocationOutline className='text-[#757575] font-semibold'></IoLocationOutline>
                         <p className='text-[#1A1919] font-semibold'>Address: {contact_information.address}</p>
                     </div>
-                    <button className='px-4 py-3 w-full mt-3 rounded-lg font-bold bg-[#78d4a0] text-white'>Apply Now</button>
+                    <button onClick={handleToasted} className='px-4 py-3 w-full mt-3 rounded-lg font-bold bg-[#78d4a0] text-white'>Apply Now</button>
+                    <ToastContainer />
                 </div>
             </div>
         </div>

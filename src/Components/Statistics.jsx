@@ -42,7 +42,7 @@ function Statistics() {
   const COLORS = ['#82ca9d', '#205F3C'];
 
   return (
-    <div className="statistics-page p-8">
+    <div className="statistics-page px-8 pb-8">
       <h1 className="text-4xl text-center font-semibold mb-12">Job Statistics</h1>
 
       {/* Line Chart */}
