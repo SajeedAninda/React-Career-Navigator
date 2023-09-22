@@ -5,6 +5,7 @@ import Home from './Components/Home.jsx'
 import Blogs from './Components/Blogs.jsx'
 import AppliedJobs from './Components/AppliedJobs.jsx'
 import Statistics from './Components/Statistics.jsx'
+import JobDetails from './Components/JobDetails.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
         path: "/statistics",
         element: <Statistics></Statistics>,
       },
+      {
+        path: "/jobdetails/:id",
+        element: <JobDetails></JobDetails>,
+      }
     ],
   },
 ]);
