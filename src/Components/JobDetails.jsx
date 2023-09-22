@@ -8,17 +8,17 @@ import { IoLocationOutline } from "react-icons/io5";
 import { BiSolidBusiness } from "react-icons/bi";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveJobApplication } from './localStorageSave';
 
 const JobDetails = () => {
     let jobData = useLoaderData();
     let { id } = useParams();
     let idInt = parseInt(id);
     let job = jobData.find(job => job.id === idInt);
-    console.log(jobData);
-    console.log(job);
     let { job_description, job_responsibility, educational_requirements, experiences, job_title, salary, contact_information, company_name } = job;
 
     let handleToasted=()=>{
+        saveJobApplication(idInt);
         toast("Applied Succesfully!");
     }
 
