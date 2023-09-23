@@ -25,15 +25,15 @@ const JobDetails = () => {
     return (
         <div>
             <h2 className='text-3xl text-[#1A1919] font-extrabold text-center my-8'>Job Details</h2>
-            <div className='flex gap-6'>
-                <div className='space-y-5 w-2/3'>
+            <div className='flex flex-col-reverse lg:flex-row gap-12 lg:gap-6'>
+                <div className='space-y-5 w-full lg:w-2/3'>
                     <h2 className='text-[#757575] font-medium'><span className='text-[#1A1919] font-extrabold'>Job Description: </span>{job_description}</h2>
                     <h2 className='text-[#757575] font-medium'><span className='text-[#1A1919] font-extrabold'>Job Responsibility: </span>{job_responsibility}</h2>
                     <h2 className='text-[#757575] font-medium'><span className='text-[#1A1919] font-extrabold'>Educational Requirements: <br /></span>{educational_requirements}</h2>
                     <h2 className='text-[#757575] font-medium'><span className='text-[#1A1919] font-extrabold'>Experiences: <br /></span>{experiences}</h2>
                 </div>
 
-                <div className='w-1/3 p-4 bg-[#9de6bc6e] rounded-xl'>
+                <div className='w-full lg:w-1/3 p-4 bg-[#9de6bc6e] rounded-xl'>
                     <div className='border-b border-gray-300 py-4'>
                         <h2 className='text-[#1A1919] font-bold text-xl'>Job Details</h2>
                     </div>
