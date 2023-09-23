@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 const JobApplications = ({ jobs }) => {
     let { id, logo, job_title, company_name, remote_or_onsite, location, salary, job_type } = jobs;
     return (
-        <div className='flex justify-between items-center p-4 rounded-xl gap-6 border border-[#85D7A9]'>
-            <div className='flex gap-6'>
+        <div className='flex flex-col md:flex-row justify-between items-center p-4 rounded-xl gap-6 border border-[#85D7A9]'>
+            <div className='flex flex-col md:flex-row gap-6'>
                 <div className='p-4 w-[150px] h-[150px] bg-[#c8f7dc] flex justify-center items-center'>
                     <img src={logo} alt="" />
                 </div>
@@ -35,7 +35,7 @@ const JobApplications = ({ jobs }) => {
             </div>
             <div className='mr-6'>
                 <Link to={`/jobdetails/${id}`}>
-                    <button className='px-6 mt-3 py-4 rounded-lg font-bold bg-[#85D7A9] text-white'>View Details</button>
+                    <button className='px-4 lg:px-6 mt-3 py-3 lg:py-4 rounded-lg font-bold bg-[#85D7A9] text-white'>View Details</button>
                 </Link>
             </div>
 
